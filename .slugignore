@@ -1,5 +1,0 @@
-﻿
-# AWS Elastics Beanstalk
-.ebextensions/
-.elasticbeanstalk/
-.ebignore
