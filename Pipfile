@@ -12,9 +12,9 @@ djangorestframework = "*"
 spacy = "*"
 lxml = "*"
 scattertext = "*"
-requests = "*"
 pytextrank = "*"
-awsebcli = "*"
+awscli = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.7"

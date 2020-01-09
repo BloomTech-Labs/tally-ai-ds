@@ -1,7 +1,7 @@
+# coding: utf-8
 from django.shortcuts import render
 
 # Create your views here.
-
 from django.http import HttpResponse
 from rest_framework import generics
 from .models import YelpYelpScraping
@@ -13,11 +13,15 @@ import requests
 import json
 
 
+def hello(request):
+    result = "Hello, you are at the Tally Yelp Analytics home page."
+    return HttpResponse(result)
+
 def home(request, business_id):
     result = "This is Yelp Analytics home page."
     viztype = request.GET.get('viztype')
     if viztype == '1':
-        result = "this is a line chart."
+        result = json.dumps(yelpTrendyPhrases(business_id))
     else:
         result = json.dumps(yelpScraper(business_id))
     return HttpResponse(result)
