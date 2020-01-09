@@ -30,7 +30,7 @@ class YelpBusiness(models.Model):
 
     def __str__(self):
         """Return a human readable representation of the model instance."""
-        return "{}".format(self.name)
+        return "{}".format(self.business_id)
         
     class Meta:
         managed = False
@@ -39,9 +39,9 @@ class YelpBusiness(models.Model):
 
 class YelpReview(models.Model):
     uuid = models.UUIDField(primary_key=True)
-    review_id = models.CharField(max_length=50, blank=True, null=True)
-    business_id = models.CharField(max_length=50, blank=True, null=True)
-    user_id = models.CharField(max_length=50, blank=True, null=True)
+    review_id = models.CharField(max_length=100, blank=True, null=True)
+    business_id = models.CharField(max_length=100, blank=True, null=True)
+    user_id = models.CharField(max_length=100, blank=True, null=True)
     stars = models.FloatField(blank=True, null=True)
     datetime = models.DateTimeField(blank=True, null=True)
     date = models.DateField(blank=True, null=True)
@@ -52,7 +52,7 @@ class YelpReview(models.Model):
 
     def __str__(self):
         """Return a human readable representation of the model instance."""
-        return "{}".format(self.name)
+        return "{}".format(self.uuid)
 
     class Meta:
         managed = False
@@ -61,9 +61,9 @@ class YelpReview(models.Model):
 
 class YelpYelpScraping(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    review_id = models.CharField(max_length=50, blank=True, null=True)
-    business_id = models.CharField(max_length=50, blank=True, null=True)
-    user_id = models.CharField(max_length=50, blank=True, null=True)
+    review_id = models.CharField(max_length=100, blank=True, null=True)
+    business_id = models.CharField(max_length=100, blank=True, null=True)
+    user_id = models.CharField(max_length=100, blank=True, null=True)
     stars = models.FloatField(blank=True, null=True)
     datetime = models.DateTimeField(blank=True, null=True)
     date = models.DateField(blank=True, null=True)
@@ -73,7 +73,7 @@ class YelpYelpScraping(models.Model):
 
     def __str__(self):
         """Return a human readable representation of the model instance."""
-        return "{}".format(self.name)
+        return "{}".format(self.uuid)
 
     class Meta:
         managed = False

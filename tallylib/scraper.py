@@ -3,6 +3,7 @@ from requests import Session
 from lxml import html
 import pandas as pd
 import spacy
+import en_core_web_sm
 import scattertext as st
 
 
@@ -43,7 +44,8 @@ def yelpScraper(bid, from_isbn=False):
     s.scrape()
     df = s.data
 
-    nlp = spacy.load("en_core_web_sm/en_core_web_sm-2.2.5")
+    # nlp = spacy.load("en_core_web_sm/en_core_web_sm-2.2.5")
+    nlp = en_core_web_sm.load()
     nlp.Defaults.stop_words |= {'will','because','not','friends','amazing','awesome','first','he','check-in','=','= =','male','u','want', 'u want', 'cuz','him',"i've", 'deaf','on', 'her','told','told him','ins', 'check-ins','check-in','check','I', 'i"m', 'i', ' ', 'it', "it's", 'it.','they','coffee','place','they', 'the', 'this','its', 'l','-','they','this','don"t','the ', ' the', 'it', 'i"ve', 'i"m', '!', '1','2','3','4', '5','6','7','8','9','0','/','.',','}
 
     corpus = st.CorpusFromPandas(df,
