@@ -13,7 +13,7 @@ You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here
 
 🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
-|                                       [Student 1](https://github.com/)                                        |                                       [Student 2](https://github.com/)                                        |                                       [Student 3](https://github.com/)                                        |                                       [Student 4](https://github.com/)                                        |                                       [Student 5](https://github.com/)                                        |
+|                                       [Student 1](https://github.com/Nov05)                                        |                                       [Student 2](https://github.com/LilySu)                                        |                                       [Student 3](https://github.com/)                                        |                                       [Student 4](https://github.com/)                                        |                                       [Student 5](https://github.com/)                                        |
 | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
 |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |
 |                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)             |
@@ -33,27 +33,19 @@ You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here
 ## Project Overview
 
 
-1️⃣ [Trello Board](🚫add link to trello board here)
+1️⃣ [Trello Board](https://trello.com/b/chjNoXqZ/labs19-tallyai
 
-1️⃣ [Product Canvas](🚫add link to product canvas here)
-
-🚫 Replace lorem ipsum with a description of your project
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-🚫  delete if front end is not applicable to your project
+1️⃣ [Product Canvas](https://www.notion.so/Tally-AI-1cfa6653c8de4baf883f80ab9696d45e)
 
 1️⃣ [Deployed Front End](🚫add link to deployed app here)
 
 ### Tech Stack
 
-🚫 List all of the languages, frameworks, services, etc used here.
+Python, Django, Postgres, AWS
 
 ### 2️⃣ Predictions
 
-🚫 Describe your models here
+Spacy, Facebook Fasttext, Scattertext, Textrank
 
 ### 2️⃣ Explanatory Variables
 
@@ -63,14 +55,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 -   Explanatory Variable 4
 
 ### Data Sources
-🚫  Add to or delete souce links as needed for your project
 
-
--   [Source 1] (🚫add link to python notebook here)
--   [Source 2] (🚫add link to python notebook here)
--   [Source 3] (🚫add link to python notebook here)
--   [Source 4] (🚫add link to python notebook here)
--   [Source 5] (🚫add link to python notebook here)
+-   [Yelp Dataset] (https://drive.google.com/open?id=1FSXRxviyGPRJ-soUitha8Npa69jbYDvH)
 
 ### Python Notebooks
 
@@ -86,9 +72,78 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 🚫 List directions on how to connect to the API here
 
-### 3️⃣ How to connect to the data API
+### 3️⃣ How to connect to the data API  
 
-🚫 List directions on how to connect to the API here
+Web Scraped Endpoints
+1. Returns 10 positive and 10 negative word phrases associated with a business
+2. Cumulative average of  review star ratings for the past 8 weeks  vs the average rating  per  week .
+timespan 8 weeks
+e.g.
+8 weeks ago: 1,1,1,1,1, weekly_avg_rating=1, cumulative_avg_rating=1
+7 weeks ago: 2,2,2,2,2, weekly_avg_rating=2, cumulative_avg_rating=1.5
+6 weeks ago: 3,3,3,3,3, weekly_avg_rating=3, cumulative_avg_rating=2
+http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
+Returns:
+
+```
+[
+   {
+     date: '2020-01-10’, 
+     cumulative_avg_rating: 3, 
+     weekly_avg_rating: 2
+   },
+   {
+     date: 'Date 2', 
+     cumulative_avg_rating: 4,
+     weekly_avg_rating: 3
+   }
+]
+```
+
+Endpoints Looking Through Yelp Dataset
+Returns “Trending” word phrases and their comparative fluctuations over segments of time. 
+http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=1
+Returns:
+
+```
+[
+   {
+       date: 'string with date',
+       data: [ { phrase: "phrase 1", rank: 1}, 
+               { phrase: "phrase 2", rank: 1}, 
+               { phrase: "phrase 3", rank: 1} ]
+   },
+   {
+       date: 'string with date',
+       data: [ { phrase: "phrase 1", rank: 2}, 
+               { phrase: "phrase 2", rank: 2}, 
+               { phrase: "phrase 3", rank: 1.5} ]
+   },
+   {
+       date: 'string with date',
+       data: [ { phrase: "phrase 1", rank: 2}, 
+               { phrase: "phrase 2", rank: 4}, 
+               { phrase: "phrase 3", rank: 2} ]
+   },
+]
+```
+
+Review frequency - shows change in number of reviews over time
+http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=2
+Returns:
+
+```
+[{"date": "2017-8-31", "reviews": 4}, {"date": "2017-12-31", "reviews": 2}, 
+{"date": "2018-1-31", "reviews": 1}, {"date": "2018-2-28", "reviews": 2}, 
+{"date": "2018-3-31", "reviews": 1}, {"date": "2018-4-30", "reviews": 4}, 
+{"date": "2018-5-31", "reviews": 2}, {"date": "2018-6-30", "reviews": 1}, 
+{"date": "2018-7-31", "reviews": 3}, {"date": "2018-8-31", "reviews": 1}, 
+{"date": "2018-9-30", "reviews": 1}, {"date": "2018-11-30", "reviews": 1}]
+```
+
+[【Testing URLs】](https://drive.google.com/file/d/1ziicAiUIfa8dI-qtMs8WJQN_5zbr2l0o/)    
+[【Testing data documents】](https://drive.google.com/open?id=1EKPZh1e88_jnXafk7OJ_euSB54ilmFdJ)  
+[【Testing script Colab】](https://colab.research.google.com/drive/1Gzo2lFj1cEj72mkVoko5rAo-OXaeLwot)  
 
 ## Contributing
 
