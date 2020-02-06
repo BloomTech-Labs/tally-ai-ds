@@ -7,8 +7,12 @@ Business owners don’t have time to decode what people are saying about their b
 
 The app is currently piloting its functionality on hundreds of cafes and restaurants around the Phoenix, AZ area. 
 
+Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
+
 ```
- "Data analytics is not just for big corporations. Your small business can stay on top of an ever changing marketplace with the power of Tally."
+ "Data analytics is not just for big corporations. 
+ Your small business can stay on top of an ever changing 
+ marketplace with the power of Tally."
 ```
 
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
@@ -676,15 +680,18 @@ $ pipenv install django-apscheduler
 
 <img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200>
 
-###Sample conclusions from business owners
+### Example conclusions from looking at the above dashboard by business owners
 ```
-I might look into training my staff on customer service etiquette since people are complaining about the service.
-```
-```
-I'm relieved that my half-price bottle service is getting buzz from the word trend chart.
+I might look into training my staff on customer service etiquette 
+since people are complaining about the service.
 ```
 ```
-Seeing a snapshot of trending phrases from my competitors have made me realize that I might think about introducing happy hour.
+I'm relieved that my half-price bottle service is getting 
+buzz from the word trend chart.
+```
+```
+Seeing a snapshot of trending phrases from my competitors 
+have made me realize that I might think about introducing happy hour.
 ```
 
 
