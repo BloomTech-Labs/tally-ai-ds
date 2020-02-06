@@ -616,7 +616,9 @@ $ python manage.py celery beat --loglevel=info
 # Web Application UI   
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2019_14_02-Tally%20AI.png?raw=true" height=370>
 
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200><img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
+<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200>
+
+<img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
 
 
 ## Contributing
