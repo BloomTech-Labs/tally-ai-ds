@@ -15,7 +15,7 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
  with the power of Tally."
 ```
 
-[Deployed Front End](https://www.tally-ai.com)
+[Check the App Out](https://www.tally-ai.com)
 
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
 
