@@ -3,10 +3,18 @@
 
 A Word-Trend Business Intelligence Dashboard That Provides Actionable Business Insights. 
 
+Business owners don’t have time to decode what people are saying about their business online - they just want to know what to improve -  so our goal for Tally AI was to provide actionable suggestions to help businesses grow profit. 
+
+The app is currently piloting its functionality on hundreds of cafes and restaurants around the Phoenix, AZ area. 
+
+```
+ "Data analytics is not just for big corporations. Your small business can stay on top of an ever changing marketplace with the power of Tally."
+```
+
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
 
 ##  Contributors
-## Data Science
+### Data Science
 
 
 |                                       [Wenjing Liu](https://github.com/Nov05)                                        |                                       [Lily Su](https://github.com/LilySu)                                        |                                       [Rohan Kulkarni](https://github.com/kulkarohan)                                        |
@@ -17,7 +25,7 @@ A Word-Trend Business Intelligence Dashboard That Provides Actionable Business I
 
 
 
-## Web Development 
+### Web Development 
 
 
 |                                       [Patrick Stevenson](http://github.com/patjonstevenson)                                        |                                       [Steve Renner](http://github.com/steverenner1)                                        |                                       [Rohan Kulkarni](https://github.com/Turtled)                                        |                                       [David Downes](http://github.com/Gatrrr)                                        |
@@ -28,7 +36,7 @@ A Word-Trend Business Intelligence Dashboard That Provides Actionable Business I
 
 
 
-## Product Manager | UX Designer
+### Product Manager | UX Designer
 
 
 |                                       [Elizabeth Ter Sahakyan](https://github.com/elizabethts)                                        |                                       [Colton Mortensen](https://medium.com/@colton.j.mortensen)                                        |
@@ -668,6 +676,16 @@ $ pipenv install django-apscheduler
 
 <img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200>
 
+###Sample conclusions from business owners
+```
+I might look into training my staff on customer service etiquette since people are complaining about the service.
+```
+```
+I'm relieved that my half-price bottle service is getting buzz from the word trend chart.
+```
+```
+Seeing a snapshot of trending phrases from my competitors have made me realize that I might think about introducing happy hour.
+```
 
 
 
