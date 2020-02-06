@@ -13,7 +13,7 @@ A Word-Trend Analysis Application That Provides Actionable Business Insights. A 
 | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
 |                      [<img src="https://i.ibb.co/N6vySPR/T4-JUEB3-ME-UJ7-MM6147-da306f44172b-512.jpg" width = "200" />](https://github.com/Nov05)                       |                      [<img src="https://i.ibb.co/S5Ltcj7/download.png" width = "200" />](https://github.com/LilySu)                       |                      [<img src="https://i.ibb.co/gmh9m0f/0.jpg" width = "200" />](https://github.com/kulkarohan)                       |
 |                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Nov05)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/LilySu)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/kulkarohan)            |
-| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://twitter.com/wenjingliu7) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/lilyxsu) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/kulkarohan/) | 
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/wenjing-liu-ba928627) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/lilyxsu) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/kulkarohan/) | 
 
 
 
@@ -72,18 +72,33 @@ Spacy, Facebook Fasttext, Scattertext, Textrank
 
 -   [Yelp Dataset] (https://drive.google.com/open?id=1FSXRxviyGPRJ-soUitha8Npa69jbYDvH)
 
+### Canvas Release Presentations 1-3
+
+-   [Release Canvas 1 & 2] (https://docs.google.com/presentation/d/1aRQgip0EvYSuksRj_JkpKpjg3WUs4oM2vQiz7tpe3q4/edit?usp=sharing)
+
+-   [Release Canvas 3] (https://docs.google.com/presentation/d/1rEMi0qMWwPz2fIiEhs0Li0CsNeqq-tVpNmJpfobQA4g/edit?usp=sharing)
+
 ### Python Notebooks
 
-🚫  Add to or delete python notebook links as needed for your project
 
-[Python Notebook 1](🚫add link to python notebook here)
+[Exploratory Data Analysis Yelp Dataset](https://colab.research.google.com/drive/1NsVM4o4dVgHa6P7BUolCp2stNM8-cGKc)
 
-[Python Notebook 2](🚫add link to python notebook here)
+[NLP - BERT, word vectors, sentence vectors](https://colab.research.google.com/drive/1wnKvhn2JEPgM11SwxUQZSgaty2iHPiYy)
 
-[Python Notebook 3](🚫add link to python notebook here)
+[Calculating Word Frequency Correlations with Ratings](https://github.com/LilySu/BetterBusinessByReview/blob/master/notebooks/scraper-to-df-for-app.ipynb)
+
+[NLP - Spacy Named Entity Recognition POS Tagging Exploration](https://github.com/LilySu/BetterBusinessByReview/blob/master/notebooks/explorations/NLP_Spacy_Named_Entity_Recognition_Parts_of_Speech.ipynb)
+
+[Finding Context in Words Correlated with Highest and Lowest Ratings](https://github.com/LilySu/BetterBusinessByReview/blob/master/notebooks/explorations/Word_Phrase_Endpoint_Refactoring3.ipynb)
+
+[Refactored Context in Words Correlated with Highest and Lowest Ratings](https://github.com/LilySu/BetterBusinessByReview/blob/master/notebooks/explorations/Word_Phrase_Endpoint_Refactoring.ipynb)
+
+[WordNet and Vader Sentiment Explorations](https://github.com/LilySu/BetterBusinessByReview/blob/master/notebooks/explorations/Sentiment6Categories.ipynb)
+
+[LDA Topic Modeling Explorations](https://github.com/LilySu/BetterBusinessByReview/blob/master/notebooks/explorations/ldatopicmodelingexplorations.ipynb)
 
 
-### How to connect to the data API  
+### How to Connect to the Data Science API  
 
 Web Scraped Endpoints
 1. Returns 10 positive and 10 negative word phrases associated with a business
