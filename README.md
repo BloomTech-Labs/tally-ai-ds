@@ -1,7 +1,10 @@
 
-# 1️⃣ Tally AI
+# Tally AI
 
 A Word-Trend Analysis Application That Provides Actionable Business Insights. A Business Intelligence Dashboard for Small-to-Mid-Sized Buinesses. 
+
+<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
+
 ##  Contributors
 ## Data Science
 
@@ -35,14 +38,12 @@ A Word-Trend Analysis Application That Provides Actionable Business Insights. A 
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/elizabethts) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/colton-mortensen/) |
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 
 
 ## Project Overview
 
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
+<img src="https://i.ibb.co/sbx5f5q/111.png">
 
 [Trello Board](https://trello.com/b/chjNoXqZ/labs19-tallyai
 
@@ -615,8 +616,7 @@ $ python manage.py celery beat --loglevel=info
 # Web Application UI   
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2019_14_02-Tally%20AI.png?raw=true" height=370>
 
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2003-04.png?raw=true" height=200>   
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
+<img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
 
 
 ## Contributing
