@@ -37,7 +37,6 @@ A Word-Trend Business Intelligence Dashboard That Provides Actionable Business I
 |                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/elizabethts)                 |                 [<img src="https://github.com/favicon.ico" width="15"> ](https://medium.com/@colton.j.mortensen)                 |
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/elizabethts) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/colton-mortensen/) |
 
-![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
 
 
@@ -56,7 +55,6 @@ A Word-Trend Business Intelligence Dashboard That Provides Actionable Business I
 2019-01-09 [【AWS EB deployment logs】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/aws)    
 2019-01-12 [【All SQLs used in this project】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/tallysql), [【A D3.js line chart】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/d3.js)    
 2020-02-05 You can visit the demo product at https://www.tally-ai.com/.    
-... ... ... Visit the project folders at https://github.com/Lambda-School-Labs?q=tally.     
 ... ... ... Visit the project documenation at https://drive.google.com/open?id=1MWFCPFGBZk_Jcn70ixPg7sh1URSwvuLN.  
 
 ### Tech Stack & Architecture
@@ -66,9 +64,9 @@ React, Material UI, Recharts, Python, Django, Postgres, AWS
 <img src="https://i.ibb.co/RYvKF1C/Tally-Schema-5.png">
 <img src="https://i.ibb.co/Rg5JPXc/2020-01-13-08-50-57-2020-01-13-tally-sys-arch-drawio-draw-io.png">
 
-### Predictions
+### NLP Packages Used
 
-Spacy, Facebook Fasttext, Scattertext, Textrank
+Spacy, Textrank, Scattertext, Textrank
 
 
 ### Data Sources
@@ -644,19 +642,7 @@ CAUTION: You can do it this way, but deployment from Windows 10 to AWS Elastica 
 $ pipenv install apscheduler
 $ pipenv install django-apscheduler
 ```
-**Celery (Not In Use)** [【Logs】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/celery)  
-* Celery stopped supporting Windows since version 4.0 upwards   
-* Use django-celery-beat rather than django-celery  
-```
-$ pipenv install celery
-$ pipenv install django-celery-beat django-celery-result
-```
-```
-$ celery -A tally worker -l info
-$ celery -A tally beat -l info
-$ python manage.py celery worker --loglevel=info
-$ python manage.py celery beat --loglevel=info
-```
+
 
 ### Reference  
 
@@ -723,5 +709,7 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Front End and Backend Documentation](https://docs.google.com/document/d/1zYpcNaZlCTh5gK65BCu73MSGPoYFMUCP6cBUvYFl7CU/edit?usp=sharing) for details on the backend of our project.
+See [Front End and Backend Documentation](https://docs.google.com/document/d/1zYpcNaZlCTh5gK65BCu73MSGPoYFMUCP6cBUvYFl7CU/edit?usp=sharing) for technical details on our project.
+
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
