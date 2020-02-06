@@ -59,9 +59,12 @@ A Word-Trend Analysis Application That Provides Actionable Business Insights. A 
 ... ... ... Visit the project folders at https://github.com/Lambda-School-Labs?q=tally.     
 ... ... ... Visit the project documenation at https://drive.google.com/open?id=1MWFCPFGBZk_Jcn70ixPg7sh1URSwvuLN.  
 
-### Tech Stack
+### Tech Stack & Architecture
 
 React, Material UI, Recharts, Python, Django, Postgres, AWS
+
+<img src="https://i.ibb.co/RYvKF1C/Tally-Schema-5.png">
+<img src="https://i.ibb.co/Rg5JPXc/2020-01-13-08-50-57-2020-01-13-tally-sys-arch-drawio-draw-io.png">
 
 ### Predictions
 
@@ -72,11 +75,12 @@ Spacy, Facebook Fasttext, Scattertext, Textrank
 
 -   [Yelp Dataset](https://drive.google.com/open?id=1FSXRxviyGPRJ-soUitha8Npa69jbYDvH) Stored in an AWS RDS Database
 
-<img src="https://i.ibb.co/jZSzP8g/105.png" height=200>
+<img src="https://i.ibb.co/jZSzP8g/105.png">
 
 ### Canvas Release Presentations 1-3
 
--   [Release Canvas 1 & 2](https://docs.google.com/presentation/d/1aRQgip0EvYSuksRj_JkpKpjg3WUs4oM2vQiz7tpe3q4/edit?usp=sharing)
+-   [Release Canvas 1 & 2](https://docs.google.com/presentation/d/1aRQgip0EvYSuksRj_JkpKpjg3WUs4oM2vQiz7tpe3q4/edit?usp=sharing) January 14, 2020
+-   [Release Canvas 3](https://docs.google.com/presentation/d/1rEMi0qMWwPz2fIiEhs0Li0CsNeqq-tVpNmJpfobQA4g/edit?usp=sharing) February 3, 2020
 
 ### Web | Data Science Release Canvas Deliverables
 <img src="https://i.ibb.co/B3V9mkT/101.png" height=200><img src="https://i.ibb.co/yX0DXgf/103.png" height=200>
@@ -84,7 +88,6 @@ Spacy, Facebook Fasttext, Scattertext, Textrank
 <img src="https://i.ibb.co/7Ch0XK0/106.png.png" height=200><img src="https://i.ibb.co/9HSkcyw/107.png" height=200>
 
 
--   [Release Canvas 3](https://docs.google.com/presentation/d/1rEMi0qMWwPz2fIiEhs0Li0CsNeqq-tVpNmJpfobQA4g/edit?usp=sharing)
 
 ### Python Notebooks
 
@@ -109,14 +112,43 @@ Spacy, Facebook Fasttext, Scattertext, Textrank
 ### How to Connect to the Data Science API  
 
 Web Scraped Endpoints
-1. Returns 10 positive and 10 negative word phrases associated with a business
-2. Cumulative average of  review star ratings for the past 8 weeks  vs the average rating  per  week .
+Returns 10 positive and 10 negative word phrases associated with a business
+http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
+<img src="https://i.ibb.co/0jVS7vj/123.png">
+Returns:
+```
+{
+viztype0: {
+positive: [
+      {
+         term: "cool cats",
+         score: 0.08981400595659608
+      },
+      {
+         term: "rescued cats",
+         score: 0.08956279306536073
+      }
+      ],
+   negative: [
+      {
+         term: "just bad business",
+         score: 0.0442848147595502
+      },
+      {
+         term: "a refund",
+         score: 0.03511932390225489
+      }
+   ]
+},
+```
+Cumulative average of  review star ratings for the past 8 weeks  vs the average rating  per  week .
 timespan 8 weeks
 e.g.
 8 weeks ago: 1,1,1,1,1, weekly_avg_rating=1, cumulative_avg_rating=1
 7 weeks ago: 2,2,2,2,2, weekly_avg_rating=2, cumulative_avg_rating=1.5
 6 weeks ago: 3,3,3,3,3, weekly_avg_rating=3, cumulative_avg_rating=2
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
+<img src="https://i.ibb.co/WnP79ch/124.png">
 Returns:
 
 ```
@@ -137,6 +169,7 @@ Returns:
 Endpoints Looking Through Yelp Dataset
 Returns “Trending” word phrases and their comparative fluctuations over segments of time. 
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=1
+<img src="https://i.ibb.co/Pzfm3Bt/121.png">
 Returns:
 
 ```
@@ -164,6 +197,7 @@ Returns:
 
 Review frequency - shows change in number of reviews over time
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=2
+<img src="https://i.ibb.co/SJgtMWW/122.png">
 Returns:
 
 ```
@@ -596,7 +630,9 @@ CAUTION: You can do it this way, but deployment from Windows 10 to AWS Elastica 
 
 
 ## Background Job Scheduling
-
+<img src="https://i.ibb.co/9trJjtL/120.png">
+<img src="https://i.ibb.co/GTk3S9M/108.png">
+<img src="https://i.ibb.co/cw1m1K1/125.png">
 **Advanced Python Scheduler**  
 * [APScheduler official document](https://apscheduler.readthedocs.io/en/stable/index.html)     
 * [Django-apscheduler Github repo](https://github.com/jarekwg/django-apscheduler)    
