@@ -124,7 +124,7 @@ Spacy, Textrank, Scattertext, Textrank
 Web Scraped Endpoints
 Returns 10 positive and 10 negative word phrases associated with a business
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200>
+<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=300>
 ```
 {
 viztype0: {
@@ -158,7 +158,7 @@ e.g.
 6 weeks ago: 3,3,3,3,3, weekly_avg_rating=3, cumulative_avg_rating=2
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
 ###
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
+<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=300>
 
 
 ```
@@ -180,7 +180,7 @@ Endpoints Looking Through Yelp Dataset
 Returns “Trending” word phrases and their comparative fluctuations over segments of time. 
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=1
 ###
-<img src="https://i.ibb.co/z686j86/114.png" height=200>
+<img src="https://i.ibb.co/z686j86/114.png" height=300>
 
 
 ```
@@ -209,7 +209,7 @@ http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j
 Review frequency - shows change in number of reviews over time
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=2
 ###
-<img src="https://i.ibb.co/Rc4J0sz/113.png" height=200>
+<img src="https://i.ibb.co/Rc4J0sz/113.png" height=300>
  
 ```
 [{"date": "2017-8-31", "reviews": 4}, {"date": "2017-12-31", "reviews": 2}, 
