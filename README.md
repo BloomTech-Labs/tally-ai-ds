@@ -77,7 +77,7 @@ Spacy, Facebook Fasttext, Scattertext, Textrank
 
 <img src="https://i.ibb.co/jZSzP8g/105.png">
 
-### Canvas Release Presentations 1-3
+### Release Canvas Presentation Slides 1-3
 
 -   [Release Canvas 1 & 2](https://docs.google.com/presentation/d/1aRQgip0EvYSuksRj_JkpKpjg3WUs4oM2vQiz7tpe3q4/edit?usp=sharing) January 14, 2020
 -   [Release Canvas 3](https://docs.google.com/presentation/d/1rEMi0qMWwPz2fIiEhs0Li0CsNeqq-tVpNmJpfobQA4g/edit?usp=sharing) February 3, 2020
@@ -115,7 +115,6 @@ Web Scraped Endpoints
 Returns 10 positive and 10 negative word phrases associated with a business
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200>
-Returns:
 ```
 {
 viztype0: {
@@ -148,9 +147,9 @@ e.g.
 7 weeks ago: 2,2,2,2,2, weekly_avg_rating=2, cumulative_avg_rating=1.5
 6 weeks ago: 3,3,3,3,3, weekly_avg_rating=3, cumulative_avg_rating=2
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=0
+###
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
 
-Returns:
 
 ```
 [
@@ -170,8 +169,9 @@ Returns:
 Endpoints Looking Through Yelp Dataset
 Returns “Trending” word phrases and their comparative fluctuations over segments of time. 
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=1
+###
 <img src="https://i.ibb.co/z686j86/114.png" height=200>
-Returns:
+
 
 ```
 [
@@ -198,9 +198,9 @@ Returns:
 
 Review frequency - shows change in number of reviews over time
 http://django-tally-dev.n9ntucwqks.us-west-2.elasticbeanstalk.com/yelp/jga_2HO_j4I7tSYf5cCEnQ?viztype=2
+###
 <img src="https://i.ibb.co/Rc4J0sz/113.png" height=200>
-Returns:
-
+ 
 ```
 [{"date": "2017-8-31", "reviews": 4}, {"date": "2017-12-31", "reviews": 2}, 
 {"date": "2018-1-31", "reviews": 1}, {"date": "2018-2-28", "reviews": 2}, 
@@ -215,7 +215,7 @@ Returns:
 [【Testing script Colab】](https://colab.research.google.com/drive/1Gzo2lFj1cEj72mkVoko5rAo-OXaeLwot)  
 
 
-## Activate Virtual Enviroment   
+### Activate Virtual Enviroment   
 
 Miniconda3 or Anaconda3 Python 3.7 [【Logs】](https://github.com/Nov05/yelp-dataset-challenge/blob/master/celery/2020-01-15%20python%203.7%20issue.md)  
 (If you are using Python 3.6 or manage your enviroments in some other way, skip this step.)    
@@ -245,7 +245,7 @@ spacy>=2.0.0,<3.0.0
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
 ```
 
-## Frequently Used Django Commands
+### Frequently Used Django Commands
 ```
 $ python manage.py runserver
 $ python manage.py makemigrations  
@@ -256,7 +256,7 @@ $ python manage.py collectstatic
 $ python -m django --version
 ```  
 
-## Deploy to AWS Elastic Beanstalk   
+### Deploy to AWS Elastic Beanstalk   
 
 During the deployment, you may need to use the following AWS CLI commands.
 ```  
@@ -299,7 +299,7 @@ Set `WSGIPath` = tally/wsgi.py
 Set system environment variables here too    
 
 
-## Testing URLs      
+### Testing URLs      
 
 http://127.0.0.1:8000/admin    
 http://127.0.0.1:8000/admin/django_apscheduler/     
@@ -336,7 +336,7 @@ http://127.0.0.1:8000/jobs/example (APScheduler background job)
 
 
 
-## Create A Project  
+### Create A Project  
      
 【Example】   
 ```
@@ -347,7 +347,7 @@ project name: tally
 project created in directory: D:\github\django-tally   
 
 
-## Run Django app    
+### Run Django app    
     
 ```
 $ cd path/to/django-tally
@@ -373,7 +373,7 @@ Quit the server with CTRL-BREAK.
 [07/Jan/2020 01:05:55] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
 ```
 
-## Configurate settings.py  
+### Configurate settings.py  
 
 (If you have download the repo, you can skip this step.)    
 ```
@@ -388,7 +388,7 @@ USE_TZ = True
   
 
 
-## Database configuration  
+### Database configuration  
 
 * [AWS: Python RDS Connect: Connecting to a Database](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-rds.html#python-rds-connect)  
 * [AWS: Adding a Database to Your Elastic Beanstalk Environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.db.html) (Not in use) 
@@ -462,7 +462,7 @@ Add system environment variables there.
 * For all the SQLs used in this project, refer to [these documents](https://github.com/Nov05/yelp-dataset-challenge/tree/master/tallysql).      
 
 
-## Migration 
+### Migration 
 
 If you have downloaded this repo, you can skip this step.      
 ```
@@ -497,7 +497,7 @@ Django migration will create tables automatically in the database.
 
   
 
-## Create Django Admin User  
+### Create Django Admin User  
 
 ```
 $ cd path/to/django-tally
@@ -520,7 +520,7 @@ Superuser created successfully.
 
 
 
-## Use Django REST Framework for APIs    
+### Use Django REST Framework for APIs    
  
 (If you have downloaded the repo, you can skip this step.)
     
@@ -574,7 +574,7 @@ Follow this [tutorial](https://scotch.io/tutorials/build-a-rest-api-with-django-
 
 
 
-## Django Auto-Generate Data Models from Database Tables
+### Django Auto-Generate Data Models from Database Tables
 
 ```
 $ python manage.py inspectdb > models.py
@@ -596,7 +596,7 @@ https://github.com/Nov05/django-tally/blob/master/tallylib/sql.py
 
 
 
-## spaCy
+### spaCy
 
 spaCy models   
 https://spacy.io/usage/models  
@@ -658,7 +658,7 @@ $ python manage.py celery worker --loglevel=info
 $ python manage.py celery beat --loglevel=info
 ```
 
-## Reference  
+### Reference  
 
 * [Django Documentation](https://docs.djangoproject.com/en/3.0/)   
 * [Python Django Web Framework - Full Course for Beginners Jan 2, 2019](https://www.youtube.com/watch?v=F5mRW0jo-U4)    
@@ -673,7 +673,7 @@ $ python manage.py celery beat --loglevel=info
 * 【Repo】[yelp-dataset-challenge](https://github.com/nov05/yelp-dataset-challenge)     
 
 
-# Web Application UI   
+## Web Application UI   
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2019_14_02-Tally%20AI.png?raw=true" height=370>
 
 <img src="https://i.ibb.co/xg8SG71/115.png" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
@@ -723,7 +723,5 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Backend Documentation](_link to your backend readme here_) for details on the backend of our project.
-
-See [Front End Documentation](_link to your front end readme here_) for details on the front end of our project.
+See [Front End and Backend Documentation](https://docs.google.com/document/d/1zYpcNaZlCTh5gK65BCu73MSGPoYFMUCP6cBUvYFl7CU/edit?usp=sharing) for details on the backend of our project.
 
