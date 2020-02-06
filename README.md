@@ -15,6 +15,8 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
  with the power of Tally."
 ```
 
+[Deployed Front End](https://www.tally-ai.com)
+
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
 
 ##  Contributors
@@ -56,18 +58,16 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
 
 <img src="https://i.ibb.co/sbx5f5q/111.png">
 
-[Trello Board](https://trello.com/b/chjNoXqZ/labs19-tallyai)
-
-[Product Canvas](https://www.notion.so/Tally-AI-1cfa6653c8de4baf883f80ab9696d45e)
-
-[Deployed Front End](https://www.tally-ai.com)
-
 2019-01-06 This is a Django app for data science micro service,    
 ... ... ... locally running on Windows 10, deployed on AWS Elastic Beanstalk.     
 2019-01-09 [【AWS EB deployment logs】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/aws)    
 2019-01-12 [【All SQLs used in this project】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/tallysql), [【A D3.js line chart】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/d3.js)    
 2020-02-05 You can visit the demo product at https://www.tally-ai.com/.    
-... ... ... Visit the project documenation at https://drive.google.com/open?id=1MWFCPFGBZk_Jcn70ixPg7sh1URSwvuLN.  
+... ... ... Visit the project documenation at https://drive.google.com/open?id=1MWFCPFGBZk_Jcn70ixPg7sh1URSwvuLN. 
+
+[Product Canvas](https://www.notion.so/Tally-AI-1cfa6653c8de4baf883f80ab9696d45e)
+
+[Deployed Front End](https://www.tally-ai.com)
 
 ### Tech Stack & Architecture
 
