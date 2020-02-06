@@ -70,13 +70,21 @@ Spacy, Facebook Fasttext, Scattertext, Textrank
 
 ### Data Sources
 
--   [Yelp Dataset] (https://drive.google.com/open?id=1FSXRxviyGPRJ-soUitha8Npa69jbYDvH)
+-   [Yelp Dataset](https://drive.google.com/open?id=1FSXRxviyGPRJ-soUitha8Npa69jbYDvH) Stored in an AWS RDS Database
+
+<img src="https://i.ibb.co/jZSzP8g/105.png" height=200>
 
 ### Canvas Release Presentations 1-3
 
--   [Release Canvas 1 & 2] (https://docs.google.com/presentation/d/1aRQgip0EvYSuksRj_JkpKpjg3WUs4oM2vQiz7tpe3q4/edit?usp=sharing)
+-   [Release Canvas 1 & 2](https://docs.google.com/presentation/d/1aRQgip0EvYSuksRj_JkpKpjg3WUs4oM2vQiz7tpe3q4/edit?usp=sharing)
 
--   [Release Canvas 3] (https://docs.google.com/presentation/d/1rEMi0qMWwPz2fIiEhs0Li0CsNeqq-tVpNmJpfobQA4g/edit?usp=sharing)
+### Web | Data Science Release Canvas Deliverables
+<img src="https://i.ibb.co/B3V9mkT/101.png" height=200><img src="https://i.ibb.co/yX0DXgf/103.png" height=200>
+<img src="https://i.ibb.co/pPLDSD2/102.png" height=200><img src="https://i.ibb.co/zNhQkmB/104.png" height=200>
+<img src="https://i.ibb.co/7Ch0XK0/106.png.png" height=200><img src="https://i.ibb.co/9HSkcyw/107.png" height=200>
+
+
+-   [Release Canvas 3](https://docs.google.com/presentation/d/1rEMi0qMWwPz2fIiEhs0Li0CsNeqq-tVpNmJpfobQA4g/edit?usp=sharing)
 
 ### Python Notebooks
 
