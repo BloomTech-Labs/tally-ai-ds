@@ -11,8 +11,8 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
 
 ```
  "Data analytics is not just for big corporations. 
- Your small business can stay on top of an ever changing 
- marketplace with the power of Tally."
+ Your small business can stay on top of an ever changing marketplace 
+ with the power of Tally."
 ```
 
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2016_30_17-Photos.png?raw=true">
@@ -694,6 +694,7 @@ Seeing a snapshot of trending phrases from my competitors
 have made me realize that I might think about introducing happy hour.
 ```
 
+<img src="https://i.ibb.co/0BsFwsx/127.png" height=370>
 
 
 ## Contributing
