@@ -58,6 +58,30 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
 
 <img src="https://i.ibb.co/sbx5f5q/111.png">
 
+## Web Application UI   
+<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2019_14_02-Tally%20AI.png?raw=true" height=370>
+
+<img src="https://i.ibb.co/xg8SG71/115.png" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
+
+<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200>
+
+<img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200>
+
+### Example conclusions from looking at the above dashboard by business owners
+```
+I might look into training my staff on customer service etiquette 
+since people are complaining about the service.
+```
+```
+I'm relieved that my half-price bottle service is getting 
+buzz from the word trend chart.
+```
+```
+Seeing a snapshot of trending phrases from my competitors 
+have made me realize that I might think about introducing happy hour.
+```
+
+
 This is a Django app for data science micro service,    
 ... ... ... locally running on Windows 10, deployed on AWS Elastic Beanstalk.     
 
@@ -75,9 +99,6 @@ This is a Django app for data science micro service,
 [【A D3.js line chart】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/d3.js) for exploratory data visualization work prior to migrating to Recharts
 ###
 
-
-  
-... ... ... Visit the project documenation at https://drive.google.com/open?id=1MWFCPFGBZk_Jcn70ixPg7sh1URSwvuLN. 
 
 [Product Canvas](https://www.notion.so/Tally-AI-1cfa6653c8de4baf883f80ab9696d45e)
 
@@ -684,29 +705,6 @@ $ pipenv install django-apscheduler
 * 【Repo】[flask-yelp-reviews](https://github.com/Nov05/flask-yelp-reviews)       
 * 【Repo】[yelp-dataset-challenge](https://github.com/nov05/yelp-dataset-challenge)     
 
-
-## Web Application UI   
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2019_14_02-Tally%20AI.png?raw=true" height=370>
-
-<img src="https://i.ibb.co/xg8SG71/115.png" height=200><img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2005.png?raw=true" height=200>
-
-<img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/tile%2001-02.png?raw=true" height=200>
-
-<img src="https://i.ibb.co/z686j86/114.png" height=200><img src="https://i.ibb.co/Rc4J0sz/113.png" height=200>
-
-### Example conclusions from looking at the above dashboard by business owners
-```
-I might look into training my staff on customer service etiquette 
-since people are complaining about the service.
-```
-```
-I'm relieved that my half-price bottle service is getting 
-buzz from the word trend chart.
-```
-```
-Seeing a snapshot of trending phrases from my competitors 
-have made me realize that I might think about introducing happy hour.
-```
 
 <img src="https://i.ibb.co/0BsFwsx/127.png" height=370>
 
