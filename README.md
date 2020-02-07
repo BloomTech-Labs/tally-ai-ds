@@ -58,11 +58,25 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
 
 <img src="https://i.ibb.co/sbx5f5q/111.png">
 
-2019-01-06 This is a Django app for data science micro service,    
+This is a Django app for data science micro service,    
 ... ... ... locally running on Windows 10, deployed on AWS Elastic Beanstalk.     
-2019-01-09 [【AWS EB deployment logs】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/aws)    
-2019-01-12 [【All SQLs used in this project】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/tallysql), [【A D3.js line chart】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/d3.js)    
-2020-02-05 You can visit the demo product at https://www.tally-ai.com/.    
+
+###
+[【Tally AI Front End】](https://github.com/Lambda-School-Labs/tally-ai-fe) for work with Front End UI Design
+###
+[【Tally AI Back End】](https://github.com/Lambda-School-Labs/tally-ai-be) for additional repos regarding authentification
+###
+[【Tally AI Documentation】](https://docs.google.com/document/d/1zYpcNaZlCTh5gK65BCu73MSGPoYFMUCP6cBUvYFl7CU/edit?usp=sharing) for technical details on our project.
+###
+[【AWS EB deployment logs】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/aws) for logs of our AWS Elastic Beanstalk Deployments
+###
+[【All SQLs used in this project】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/tallysql) for useful SQL queries we used
+###
+[【A D3.js line chart】](https://github.com/Nov05/yelp-dataset-challenge/tree/master/d3.js) for exploratory data visualization work prior to migrating to Recharts
+###
+
+
+  
 ... ... ... Visit the project documenation at https://drive.google.com/open?id=1MWFCPFGBZk_Jcn70ixPg7sh1URSwvuLN. 
 
 [Product Canvas](https://www.notion.so/Tally-AI-1cfa6653c8de4baf883f80ab9696d45e)
@@ -735,7 +749,7 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Front End and Backend Documentation](https://docs.google.com/document/d/1zYpcNaZlCTh5gK65BCu73MSGPoYFMUCP6cBUvYFl7CU/edit?usp=sharing) for technical details on our project.
+See [Project Documentation](https://docs.google.com/document/d/1zYpcNaZlCTh5gK65BCu73MSGPoYFMUCP6cBUvYFl7CU/edit?usp=sharing) for technical details on our project.
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
