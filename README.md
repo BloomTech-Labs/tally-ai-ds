@@ -58,6 +58,35 @@ Tally is a one-stop snapshot for understanding your businesses' Yelp reviews.
 
 <img src="https://i.ibb.co/sbx5f5q/111.png">
 
+Tally AI is a word trend analysis application that takes online business reviews and provides clear insights on what people are saying and feeling. Business owners don’t have time to decode what people are saying about their business online - they just want to know what to improve -  so our goal for Tally AI was to provide actionable insights to help these businesses grow profit. 
+
+At Tally, we believe that there is a network effect in helping small business - that when small businesses gain more revenue, everyone benefits. 
+ 
+We aimed at building a product that would provide the key insights out of any businesses’ reviews. 
+You might be asking where we are getting data and how are we analyzing the customer reviews?
+The data came from a combination of the yelp dataset and scraped data from yelp.com.
+The yelp dataset was a sampling of each businesses’ review data. It contains over 190,000 businesses from select cities and over 6 million reviews. In order to get more comprehensive data, we chose to focus on a specific area Phoenix, AZ and scrape as many businesses available in our target market. 
+We ran a pilot of our functionality on 942 cafes and restaurants around the Phoenix area.
+We ran a 10 hour scraping job across cafes and restaurants in the Phoenix, AZ area. To get this data, we used a paid proxy pool of  20,000 shared data center IP’s from a service named Luminati. Our code auto-rotates through IP’s dedicating a different IP address per page being scraped.
+
+We just focused on the data of customer reviews, star ratings and the date of the review was left. 
+For processing reviews, the data science team used
+Scattertext - for determining the correlation between word frequency and high and low ratings.
+Textrank - a graph-based ranking algorithm similar to google’s pagerank for SEO. We used textrank for keyword extraction, then found word occurrences over time.
+
+Everything was built from the ground up, and I’m going to explain now how the app works:
+After the user inputs a business name and location, we send a post request to the yelp api with the information and retrieve a list of results, which we populate in the react components.
+
+Once a specific business is selected, data is retrieved from the data science API, and is displayed in our widgets on the dashboard. The web team used Redux to manage data on the front end and actions and reducers to fetch data from the Yelp and data science APIs. The visualizations was created using Rechart and the dashboard was built with React and Material UI. A custom script was written to allow users to rearrange dashboard modules.
+
+
+The data science endpoint that powers the dashboard is uses the Django Rest Framework and is deployed on Elastic Beanstalk.  The django app takes a business_id and checks if we already have the business in our database. If the business is new, we scrape the reviews in real time. 
+
+For registered users, the analysis data that we generated for businesses are stored in our database for future retrieval. 
+
+Our Django app runs scheduled jobs using the Advanced Python Scheduler to update the analysis data that we generate for businesses and store it in our database.
+
+
 ## Web Application UI   
 <img src="https://github.com/Nov05/pictures/blob/master/tally-labs19/2020-02-05%2019_14_02-Tally%20AI.png?raw=true" height=370>
 
