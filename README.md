@@ -74,7 +74,7 @@ For processing reviews, the data science team used
 Scattertext - for determining the correlation between word frequency and high and low ratings.
 Textrank - a graph-based ranking algorithm similar to google’s pagerank for SEO. We used textrank for keyword extraction, then found word occurrences over time.
 
-Everything was built from the ground up, and I’m going to explain now how the app works:
+Everything was built from the ground up for the purpose of learning, and here's how it works:
 After the user inputs a business name and location, we send a post request to the yelp api with the information and retrieve a list of results, which we populate in the react components.
 
 Once a specific business is selected, data is retrieved from the data science API, and is displayed in our widgets on the dashboard. The web team used Redux to manage data on the front end and actions and reducers to fetch data from the Yelp and data science APIs. The visualizations was created using Rechart and the dashboard was built with React and Material UI. A custom script was written to allow users to rearrange dashboard modules.
