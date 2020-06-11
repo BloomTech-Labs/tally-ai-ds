@@ -20,6 +20,9 @@ numpy = "*"
 gensim = "*"
 sqlalchemy = "*"
 nltk = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.7"

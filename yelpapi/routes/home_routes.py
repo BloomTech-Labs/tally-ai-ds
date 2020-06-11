@@ -10,4 +10,6 @@ def test_app():
     return f"YELP DATASET REST API is working version {version}"
 
 
-    
+@home_routes.route('/hello')
+def hello():
+    return "HELLO!"

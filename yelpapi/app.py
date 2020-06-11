@@ -1,7 +1,8 @@
-""" The main application and routing logic for Yelp Flask API"""
+"""The main application and routing logic for Yelp Flask API"""
 
 from decouple import config
 from flask import Flask
+from flask_cors import CORS
 from yelpapi.routes.home_routes import home_routes
 
 def create_app():
@@ -14,3 +15,6 @@ def create_app():
     app.register_blueprint(home_routes)
 
     return app
+
+
+    #FLASK_APP=hello.py flask run
