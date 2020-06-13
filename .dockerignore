@@ -1,0 +1,7 @@
+.git
+.gitignore
+*.sh
+notebooks
+previous_labs_django_app
+scripts
+*.md

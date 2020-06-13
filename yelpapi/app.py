@@ -14,3 +14,6 @@ def create_app():
     # Registering routes
     app.register_blueprint(home_routes)
     return app
+
+
+
