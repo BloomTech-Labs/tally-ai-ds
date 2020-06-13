@@ -1,0 +1,55 @@
+# --------------------------------------------------------------
+# Github Actions Workflow to Deploy Flask App to AWS ElasticBeanstalk
+#
+# Version: 1.0
+# Date: 06-12-2020
+# Made by Harsh Desai LabsPT11 TL
+# --------------------------------------------------------------
+
+name: YELPAPI-CI-CD-Pipeline-to-AWS-ElasticBeanStalk
+env:
+  EB_PACKAGE_S3_BUCKET_NAME : "tally-ai-dspt3"
+  EB_APPLICATION_NAME       : "tallyai-ds-docker"
+  EB_ENVIRONMENT_NAME       : "TallyaiDsDocker-env"
+  DEPLOY_PACKAGE_NAME       : "yelpapi-${{ github.sha }}.zip"
+  AWS_REGION                : "us-east-1"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches:
+      - master
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+# This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Git clone our repository 
+        uses: actions/checkout@v2
+      
+      - name: Create ZIP deployment package
+        run: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} -x *.git*
+        
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          # AWS Access Key ID. This input is required if running in the GitHub hosted environment.
+          aws-access-key-id          : ${{ secrets.AWS_ACCESS_KEY }}
+          # AWS Secret Access Key. This input is required if running in the GitHub hosted environment. 
+          aws-secret-access-key      : ${{ secrets.AWS_SECRET_KEY }}
+          # AWS Region, e.g. us-east-2
+          aws-region                 : ${{ env.AWS_REGION }}
+          
+      - name: Copy our deployment package to S3 bucket
+        run: aws s3 cp ${{ env.DEPLOY_PACKAGE_NAME }} s3://${{ EB_PACKAGE_S3_BUCKET_NAME }}/
+        
+      - name: Print nice message on CI/CD Pipeline completion
+        run: echo "YELPAPI CI/CD PIpeline finished sucessfully completed."
+         
