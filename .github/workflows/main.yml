@@ -55,6 +55,7 @@ jobs:
         
   cd-pipepline:
     runs-on: ubuntu-latest
+    needs: [ci-pipepline]
   
     steps:
       - name: Configure AWS Credentials
