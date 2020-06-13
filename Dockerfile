@@ -15,5 +15,6 @@ RUN pip3 install -r requirements.txt
 
 #Exposing the port 5000 from the container
 EXPOSE 5000
+
 #Starting the python application
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "run.py"]
+CMD python3 run.py
