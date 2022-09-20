@@ -52,7 +52,7 @@ thinc==7.3.1
 threadpoolctl==2.1.0
 tqdm==4.46.1
 typed-ast==1.4.1 ; implementation_name == 'cpython' and python_version < '3.8'
-urllib3==1.25.9 ; python_version >= '3.4'
+urllib3==1.26.5 ; python_version >= '3.4'
 wasabi==0.6.0
 wrapt==1.11.2
 zipp==3.1.0
